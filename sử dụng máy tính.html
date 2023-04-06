@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sử dụng máy tính</title>
+</head>
+<body>
+<form>
+  <p>
+    <h3>máy tính</h3>
+  </p>
+  <input type="number" id="hq" placeholder="nhập số">
+  <input type="numberi" id="th" placeholder="nhập số"><br>
+  <button onclick="acd()">cộng +</button>
+  <button onclick="acb()">trừ -</button>
+  <button onclick="ace()">nhân x</button>
+  <button onclick="acf()">chia /</button>
+  <h3>kết quả:</h3>
+  <div id="aaaa"></div>
+</form>
+</body>
+</html>
+<script>
+    function acd() {
+      let a = parseInt(document.getElementById("hq").value) ;
+      let b = parseInt(document.getElementById("th").value) ;
+      let resut = a + b;
+      document.getElementById("aaaa").innerHTML = resut
+    }
+    function acb() {
+      let a = parseInt(document.getElementById("hq").value) ;
+      let b = parseInt(document.getElementById("th").value) ;
+      let efdasj = a - b;
+      document.getElementById("aaaa").innerHTML = efdasj
+    }
+    function ace() {
+      let a = parseInt(document.getElementById("hq").value) ;
+      let b = parseInt(document.getElementById("th").value) ;
+      let shshg = a * b;
+      document.getElementById("aaaa").innerHTML = shshg
+    }
+    function acf() {
+      let a = parseInt(document.getElementById("hq").value) ;
+      let b = parseInt(document.getElementById("th").value) ;
+      let euyth = a / b;
+      document.getElementById("aaaa").innerHTML = euyth
+    }
+</script>
